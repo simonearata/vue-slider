@@ -1,0 +1,74 @@
+/* general */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 600px;
+}
+
+/* header */
+.menu{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: lightgray;
+}
+
+/* main */
+.container{
+  height: 100vh;
+}
+
+.carosello{
+  position: relative;
+  padding-top: 60px;
+}
+
+.arrow-left{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+}
+
+.box-image{
+  width: 60%;
+  margin: auto;
+}
+
+.box-image img{
+  width: 100%;
+}
+
+.arrow-right{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  right: 16%;
+}
+
+/* puntini carosello */
+.puntini_carosello{
+  text-align: center;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: rgba(211, 211, 211, .3);
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.puntini_carosello i{
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.puntini_carosello i.active{
+  color: brown;
+}
